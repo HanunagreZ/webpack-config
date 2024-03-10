@@ -41,14 +41,14 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "validate-branch-name npm run lint"
+      "pre-push": "npx validate-branch-name npm run lint"
     }
   },
   "lint-staged": {
     "src/**/*.{ts, html, css}": "prettier . --check"
   },
   "validate-branch-name": {
-    "pattern": "^(fix|feat|refactor|chore|docs|init): [a-zA-Z0-9-].*$",
+    "pattern": "^(fix|feat|refactor|chore|docs|init)/[a-zA-Z0-9-].*$",
     "errorMsg": "your own error message"
   }
 }
