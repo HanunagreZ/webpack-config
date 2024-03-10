@@ -6,7 +6,9 @@
   "scripts": {
     "start": "webpack serve",
     "build:dev": "webpack --env mode=development",
-    "build:prod": "webpack --env mode=production"
+    "build:prod": "webpack --env mode=production",
+    "ci:format": "prettier . --check",
+    "format": "prettier . --write"
   },
   "keywords": [],
   "author": "",
