@@ -10,7 +10,7 @@
     "ci:format": "prettier . --check",
     "format": "prettier . --write",
     "lint": "eslint . --ext .ts --fix",
-    "validate-branch-name": " "
+    "validate-branch-name": "validate-branch-name -r 'regexp' -t BranchName"
   },
   "keywords": [],
   "author": "",
@@ -49,7 +49,7 @@
     "src/**/*.{ts, html, css}": "prettier . --check"
   },
   "validate-branch-name": {
-    "pattern": "^(master|main|develop){1}$|^(feature|fix|hotfix|release)/.+$",
+    "pattern": "^(fix|feat|refactor|chore|docs|init): [a-zA-Z0-9-].*$",
     "errorMsg": "your own error message"
   }
 }
