@@ -9,8 +9,7 @@
     "build:prod": "webpack --env mode=production",
     "ci:format": "prettier . --check",
     "format": "prettier . --write",
-    "lint": "eslint . --ext .ts --fix",
-    "validate-branch-name": "validate-branch-name -r 'regexp' -t BranchName"
+    "lint": "eslint . --ext .ts --fix"
   },
   "keywords": [],
   "author": "",
@@ -42,7 +41,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm run lint"
+      "pre-push": "validate-branch-name npm run lint"
     }
   },
   "lint-staged": {
