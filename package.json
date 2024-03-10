@@ -44,9 +44,7 @@
     }
   },
   "lint-staged": {
-    "*.ts": [
-      "npm run lint:fix",
-      "git add"
-    ]
+    "*src/**/*{ts, html, css}": "prettier . --check"
+    
   }
 }
