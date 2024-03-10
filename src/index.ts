@@ -7,5 +7,3 @@ const qq = {
   qq: 2,
   'asdasd asdasd': 'asdd',
 };
-
-console.log(qq);
