@@ -41,7 +41,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npx validate-branch-name npm run lint"
+      "pre-push": "npx validate-branch-name"
     }
   },
   "lint-staged": {
